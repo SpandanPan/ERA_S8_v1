@@ -15,9 +15,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm1=nn.BatchNorm2d(16)
         elif norm_type=='ln':
-          self.norm1=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm1=nn.GroupNorm(num_groups=1,num_channels=16)
         elif norm_type=='gn':
-          self.norm1=nn.GroupNorm(num_groups=2,num_channels=10)
+          self.norm1=nn.GroupNorm(num_groups=2,num_channels=16)
         self.dp1=nn.Dropout(p=0.1)
 
        # Conv Layer 2
@@ -25,9 +25,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm2=nn.BatchNorm2d(16)
         elif norm_type=='ln':
-          self.norm2=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm2=nn.GroupNorm(num_groups=1,num_channels=16)
         elif norm_type=='gn':
-          self.norm2=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm2=nn.GroupNorm(num_groups=4,num_channels=16)
         self.dp2=nn.Dropout(p=0.1)
 
        # TB Conv Layer1 1*1
@@ -40,9 +40,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm3=nn.BatchNorm2d(24)
         elif norm_type=='ln':
-          self.norm3=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm3=nn.GroupNorm(num_groups=1,num_channels=24)
         elif norm_type=='gn':
-          self.norm3=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm3=nn.GroupNorm(num_groups=4,num_channels=24)
         self.dp3=nn.Dropout(p=0.1)
 
       # Conv Layer 4
@@ -50,9 +50,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm4=nn.BatchNorm2d(24)
         elif norm_type=='ln':
-          self.norm4=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm4=nn.GroupNorm(num_groups=1,num_channels=24)
         elif norm_type=='gn':
-          self.norm4=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm4=nn.GroupNorm(num_groups=4,num_channels=24)
         self.dp4=nn.Dropout(p=0.1)
 
        # Conv Layer 5
@@ -60,9 +60,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm5=nn.BatchNorm2d(24)
         elif norm_type=='ln':
-          self.norm5=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm5=nn.GroupNorm(num_groups=1,num_channels=24)
         elif norm_type=='gn':
-          self.norm5=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm5=nn.GroupNorm(num_groups=4,num_channels=24)
         self.dp5=nn.Dropout(p=0.1)
 
       # TB Conv Layer2 1*1
@@ -75,9 +75,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm6=nn.BatchNorm2d(32)
         elif norm_type=='ln':
-          self.norm6=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm6=nn.GroupNorm(num_groups=1,num_channels=32)
         elif norm_type=='gn':
-          self.norm6=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm6=nn.GroupNorm(num_groups=4,num_channels=32)
         self.dp6=nn.Dropout(p=0.1)
 
       # Conv Layer 7
@@ -85,9 +85,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm7=nn.BatchNorm2d(32)
         elif norm_type=='ln':
-          self.norm7=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm7=nn.GroupNorm(num_groups=1,num_channels=32)
         elif norm_type=='gn':
-          self.norm7=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm7=nn.GroupNorm(num_groups=4,num_channels=32)
         self.dp7=nn.Dropout(p=0.1)
 
        # Conv Layer 8
@@ -95,9 +95,9 @@ class Model_Norm(nn.Module):
         if norm_type=='bn':
           self.norm8=nn.BatchNorm2d(32)
         elif norm_type=='ln':
-          self.norm8=nn.GroupNorm(num_groups=1,num_channels=10)
+          self.norm8=nn.GroupNorm(num_groups=1,num_channels=32)
         elif norm_type=='gn':
-          self.norm8=nn.GroupNorm(num_groups=4,num_channels=10)
+          self.norm8=nn.GroupNorm(num_groups=4,num_channels=32)
         self.dp8=nn.Dropout(p=0.1)
 
        # GAP Layer
