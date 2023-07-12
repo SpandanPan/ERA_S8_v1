@@ -17,4 +17,4 @@
 
 #### Misclassified Images
 
-![alt text](https://github.com/SpandanPan/ERA_S8_v1/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/SpandanPan/ERA_S8_v1/blob/main/img.png?raw=true)
