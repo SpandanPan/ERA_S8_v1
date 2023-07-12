@@ -1,3 +1,5 @@
+#### Performance on Normalization Techniques
+##### BN performed the best followed by LN and GN
 
 # Image classification on CFAR10 dataset using Normalization
 
